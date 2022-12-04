@@ -87,6 +87,38 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /* !BASE GENERAL STYLES */
+
+   html {
+    width: 100%;
+   }
+
+   body {
+    width: 100%;
+   }
+
+   /* For hiding until the content is available */
+   nav ul.nav-list li.donate,
+   nav ul li.store,
+   nav ul li.footage,
+   /* home pg*/
+   section.social-card,
+   section.video-card,
+   /* coaches pg */
+   section.assistant-coach,
+   /* players pg */
+   ul.player-list li.player figure.highlight,
+   ul.player-list li.player p.links
+   /* ul.docs-list li for both contract & code of conduct*/ {
+    display: none;
+   }
+   /* calendar pg */
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
