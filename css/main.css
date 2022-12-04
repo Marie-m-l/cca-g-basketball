@@ -96,6 +96,7 @@ textarea {
 
    body {
     width: 100%;
+    margin: 0;
    }
 
    ul,
@@ -131,13 +132,18 @@ textarea {
    figure.header-logo-container {
      height: 25%;
      margin: 0;
-   }
+    }
+    
+    h1 {
+      font-size: largest;
+      text-decoration: underline;
+    }
 
-   h1 {
-     font-size: largest;
-     text-decoration: underline;
-   }
-
+    /* !For hiding until there js is added */
+    header nav {
+     display: none;
+    }
+    
    /* !FOOTER */
    footer {
     background-color: darkred;
@@ -167,17 +173,50 @@ textarea {
     display: none;
    }
 
-   /* !For hiding until there js is added / for mobile view */
-   header nav,
-   div.calendar-week-view,
-   div.calendar-month-view {
-    display: none;
-   }
 
    /* !HOME PAGE */
    /* !COACHES PAGE */
    /* !PLAYERS PAGE */
    /* !CALENDAR PAGE */
+   article#g-cal {
+    width: 100%;
+   }
+
+   #g-cal div.calendar-agenda-view,
+   #g-cal div.calendar-week-view,
+   #g-cal div.calendar-month-view {
+    margin: 0 4%;
+  }
+  
+  div.calendar-agenda-view,
+  div.calendar-week-view,
+  div.calendar-month-view {
+    /* Responsive iFrame */
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+   }
+   
+   .calendar-agenda-view iframe,
+   div.calendar-week-view iframe,
+   div.calendar-month-view iframe,
+   .vresponsive-iframe-container object,
+   .vresponsive-iframe-container embed {
+      /* Responsive iFrame */
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+   }
+   
+   /* !For hiding for mobile view */
+   div.calendar-week-view,
+   div.calendar-month-view {
+    display: none;
+   }
 
 
 
