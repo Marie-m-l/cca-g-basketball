@@ -97,10 +97,42 @@ textarea {
     width: 100%;
    }
 
-   /* For hiding until the content is available */
+   ul,
+   ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+   }
+
+   h2 {
+    text-align: center;
+   }
+
+   p {
+    text-align: center;
+   }
+
+   address.email {
+    text-align: center;
+   }
+
+   /* !HEADER */
+   /* !FOOTER */
+   footer {
+    background-color: darkred;
+   }
+
+   figure.footr-logo-container {
+    text-align: center;
+   }
+
+   /* *For hiding until the content is available */
+   /* header */
    nav ul.nav-list li.donate,
    nav ul li.store,
    nav ul li.footage,
+   /* footer */
+   footer p.footr-instagram,
    /* home pg*/
    section.social-card,
    section.video-card,
@@ -109,12 +141,22 @@ textarea {
    /* players pg */
    ul.player-list li.player figure.highlight,
    ul.player-list li.player p.links
+   /* calendar pg */
    /* ul.docs-list li for both contract & code of conduct*/ {
     display: none;
    }
-   /* calendar pg */
 
+   /* !For hiding until there js is added / for mobile view */
+   /* *header nav, */
+   div.calendar-week-view,
+   div.calendar-month-view {
+    display: none;
+   }
 
+   /* !HOME PAGE */
+   /* !COACHES PAGE */
+   /* !PLAYERS PAGE */
+   /* !CALENDAR PAGE */
 
 
 
@@ -207,8 +249,23 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 750px) {
   /* Style adjustments for viewports that meet the condition */
+     /* !For hiding until there js is added / for mobile view */
+   /* *header nav, */
+   div.calendar-week-view,
+   div.calendar-agenda-view {
+    display: none;
+   }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Style adjustments for viewports that meet the condition */
+       /* !For hiding until there js is added / for mobile view */
+   /* *header nav, */
+   div.calendar-week-view {
+    display: none;
+   }
 }
 
 @media print,
