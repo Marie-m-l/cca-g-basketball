@@ -108,6 +108,8 @@ textarea {
 
    h2 {
     text-align: center;
+    text-decoration: underline;
+    width: 100%;
    }
 
    p {
@@ -161,6 +163,7 @@ textarea {
    /* footer */
    footer p.footr-instagram,
    /* home pg*/
+   #score-prev-game p#vid,
    section.social-card,
    section.video-card,
    /* coaches pg */
@@ -175,6 +178,21 @@ textarea {
 
 
    /* !HOME PAGE */
+   #score-prev-game {}
+
+   #score-prev-game .links-to-accnts {
+    display: flex;
+    justify-content: center;
+  }
+
+  p#score,
+  p#vid {
+    /* *below only until have link */
+    /* *width: 50%; */
+    font-size: larger;
+    font-weight: bolder;
+   }
+
    /* !COACHES PAGE */
    /* !PLAYERS PAGE */
    /* !CALENDAR PAGE */
