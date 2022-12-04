@@ -91,6 +91,7 @@ textarea {
 
    html {
      font-size: 16px;
+     height: 100%;
      width: 100%;
    }
 
@@ -165,7 +166,7 @@ textarea {
    /* home pg*/
    #score-prev-game p#vid,
    section.social-card,
-   section.video-card,
+   section#video-card,
    /* coaches pg */
    section.assistant-coach,
    /* players pg */
@@ -191,8 +192,23 @@ textarea {
     font-weight: bolder;
   }
 
+  #ticket-card figure.qr-code-smaller {
+    width: 80%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
 
+  /* mobile */
+  #ticket-card figure.qr-code-large {
+    display: none;
+  }
 
+  #ticket-card p.ticket-direct-link {
+    text-align: center;
+  }
+
+  
   /* !COACHES PAGE */
   /* !PLAYERS PAGE */
   /* !CALENDAR PAGE */
