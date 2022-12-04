@@ -178,8 +178,6 @@ textarea {
 
 
    /* !HOME PAGE */
-   #score-prev-game {}
-
    #score-prev-game .links-to-accnts {
     display: flex;
     justify-content: center;
@@ -191,18 +189,20 @@ textarea {
     /* *width: 50%; */
     font-size: larger;
     font-weight: bolder;
-   }
+  }
 
-   /* !COACHES PAGE */
-   /* !PLAYERS PAGE */
-   /* !CALENDAR PAGE */
-   article#g-cal {
+
+
+  /* !COACHES PAGE */
+  /* !PLAYERS PAGE */
+  /* !CALENDAR PAGE */
+  article#g-cal {
     width: 100%;
-   }
+  }
 
-   #g-cal div.calendar-agenda-view,
-   #g-cal div.calendar-week-view,
-   #g-cal div.calendar-month-view {
+  #g-cal div.calendar-agenda-view,
+  #g-cal div.calendar-week-view,
+  #g-cal div.calendar-month-view {
     margin: 0 4%;
   }
   
