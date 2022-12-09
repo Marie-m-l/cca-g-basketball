@@ -121,11 +121,15 @@ textarea {
     text-align: center;
    }
 
+   /* !HEADER/FOOTER */
+
+   header,
+   footer {
+    background-color: darkred;
+    width: 100%;
+   }
+   
    /* !HEADER */
-   header {
-     background-color: darkred;
-     width: 100%;
-    }
     
     header .h1-and-figure-wrapper {
       display: flex;
@@ -148,10 +152,6 @@ textarea {
     }
     
    /* !FOOTER */
-   footer {
-    background-color: darkred;
-   }
-
    figure.footr-logo-container {
     text-align: center;
    }
@@ -193,10 +193,10 @@ textarea {
   }
 
   #ticket-card figure.qr-code-smaller {
-    width: 80%;
     display: flex;
     margin: 0;
     padding: 0;
+    width: 80%;
   }
 
   /* mobile */
@@ -211,6 +211,26 @@ textarea {
   
   /* !COACHES PAGE */
   /* !PLAYERS PAGE */
+  ul.player-directory {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+  }
+
+  ul#player-list {
+    display: flex;
+    /* flex-flow: row nowrap; */
+    /* justify-content: center; */
+    width: 100%;
+  }
+
+  li.player {
+    display: flex;
+    /* flex-flow: row wrap; */
+    justify-content: center;
+    width: 100%;
+  }
+
   /* !CALENDAR PAGE */
   article#g-cal {
     width: 100%;
