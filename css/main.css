@@ -128,7 +128,7 @@ textarea {
     background-color: darkred;
     width: 100%;
    }
-   
+
    /* !HEADER */
     
     header .h1-and-figure-wrapper {
@@ -211,10 +211,17 @@ textarea {
   
   /* !COACHES PAGE */
   /* !PLAYERS PAGE */
-  ul.player-directory {
+  ul.player-directory-mobile, 
+  ul.player-directory-non-mobile {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
+  }
+
+  /* !mobile-hide and shown instead in larger formats */
+
+  ul.player-directory-non-mobile {
+    display: none;
   }
 
   ul#player-list {
