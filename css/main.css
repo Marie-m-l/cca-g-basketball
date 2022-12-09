@@ -118,7 +118,8 @@ textarea {
    }
 
    address.email {
-    text-align: center;
+     font-weight: bolder;
+     text-align: center;
    }
 
    /* !HEADER/FOOTER */
@@ -154,6 +155,10 @@ textarea {
    /* !FOOTER */
    figure.footr-logo-container {
     text-align: center;
+   }
+
+   footer p {
+    font-weight: bold;
    }
 
    /* *For hiding until the content is available */
