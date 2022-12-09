@@ -170,8 +170,8 @@ textarea {
    /* coaches pg */
    section.assistant-coach,
    /* players pg */
-   ul.player-list li.player figure.highlight,
-   ul.player-list li.player p.links
+   figure.highlight,
+   p.links
    /* calendar pg */
    /* ul.docs-list li for both contract & code of conduct*/ {
     display: none;
@@ -219,24 +219,33 @@ textarea {
   }
 
   /* !mobile-hide and shown instead in larger formats */
-
   ul.player-directory-non-mobile {
     display: none;
   }
 
   ul#player-list {
-    display: flex;
-    /* flex-flow: row nowrap; */
-    /* justify-content: center; */
     width: 100%;
   }
 
-  li.player {
+  #player-list li {
     display: flex;
-    /* flex-flow: row wrap; */
     justify-content: center;
     width: 100%;
   }
+
+  /* *hid figure and links lines w/i gen hide block until viable to show b/c we don't have the content yet */
+
+  #player-list li p.name,
+  #player-list li p.position,
+  #player-list li p.jv-or-var,
+  #player-list li p.year {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 2%;
+    width: 25%;
+  }
+
 
   /* !CALENDAR PAGE */
   article#g-cal {
@@ -378,6 +387,14 @@ textarea {
    div.calendar-agenda-view {
     display: none;
    }
+
+   ul.player-directory-mobile {
+    display: none;
+  }
+
+  ul.player-directory-non-mobile {
+    display: flex;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
