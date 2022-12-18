@@ -147,9 +147,18 @@ textarea {
       text-decoration: underline;
     }
 
-    /* !For hiding until there js is added */
-    header nav {
-     display: none;
+    nav {
+      background-color: black;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    ul.nav-list li a {
+      color: white;
+    }
+    
+    .show-nav {
+      display: none;
     }
     
    /* !FOOTER */
@@ -157,8 +166,13 @@ textarea {
     text-align: center;
    }
 
+   footer .email {
+    color: white;
+   }
+
    footer p {
     font-weight: bold;
+    font-size: larger;
    }
 
    /* *For hiding until the content is available */
@@ -221,6 +235,12 @@ textarea {
     justify-content: space-evenly;
   }
 
+  ul.player-section-titles {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 2%;
+  }
+
   /* !mobile-hide and shown instead in larger formats */
   ul.player-directory-non-mobile {
     display: none;
@@ -230,11 +250,17 @@ textarea {
     width: 100%;
   }
 
+  .player-section-titles li,
   #player-list li {
     display: flex;
     justify-content: center;
     width: 100%;
   }
+
+    .player-section-titles li {
+      font-size: larger;
+      text-decoration: underline;
+    }
 
   /* *hid figure and links lines w/i gen hide block until viable to show b/c we don't have the content yet */
 
