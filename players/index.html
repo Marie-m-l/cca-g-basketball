@@ -19,6 +19,12 @@
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/main.css">
 
+  <!-- icons and nav button  -->
+  <script src="https://kit.fontawesome.com/07e87da65b.js" crossorigin="anonymous"></script>
+
+  <!-- nav javascript to toggle the mobile nav -->
+  <script src="../js/main.js" defer></script>
+
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -50,7 +56,9 @@
   
       <nav>
 
-        <figure class="nav-logo-container">
+        <button class="nav-button"><i class="fa-sharp fa-solid fa-bars"></i></button>
+
+        <figure class="nav-logo-container show-nav">
 
           <a href="../index.html">
   
@@ -60,7 +68,7 @@
   
         </figure>
 
-        <ul class="nav-list">
+        <ul class="nav-list show-nav">
 
           <li class="home">
             <a href="../index.html">Home</a>
