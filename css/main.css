@@ -408,15 +408,9 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 750px) {
-  /* Style adjustments for viewports that meet the condition */
-     /* !For hiding until there js is added / for mobile view */
-   /* *header nav, */
-   div.calendar-week-view,
-   div.calendar-agenda-view {
-    display: none;
-   }
+@media only screen and (min-width: 768px) {
 
+  /* !PLAYERS PG */
    ul.player-directory-mobile {
     display: none;
   }
@@ -424,15 +418,48 @@ textarea {
   ul.player-directory-non-mobile {
     display: flex;
   }
+  
+  /*  !CALENDAR PG */
+  
+  div.calendar-week-view,
+  div.calendar-agenda-view {
+   display: none;
+  }
+  
+  div.calendar-month-view {
+    display: flex;
+  }
+  
 }
 
 @media only screen and (min-width: 1200px) {
-  /* Style adjustments for viewports that meet the condition */
-       /* !For hiding until there js is added / for mobile view */
-   /* *header nav, */
-   div.calendar-week-view {
-    display: none;
-   }
+
+  /*  !CALENDAR PG */
+/* *NEED TO WORK ON BELOW CODE FOR THIS @MEDIA AFTER COMMITTING & MERGE PREVIOUS CHANGES */
+  article#g-cal {
+    width: 100%;
+  }
+  
+  div.calendar-week-view {
+   display: none;
+  }
+
+  div.calendar-month-view,
+  /* div.calendar-week-view, */
+  div.calendar-agenda-view {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  
+  div.calendar-agenda-view {
+    width: 30%;
+    
+  }
+
+  div.calendar-month-view {
+    width: 60%;
+  }
+
 }
 
 @media print,
