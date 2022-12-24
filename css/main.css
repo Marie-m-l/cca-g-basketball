@@ -162,17 +162,32 @@ textarea {
     }
     
    /* !FOOTER */
+   footer {
+    margin: 4% 0;
+    font-weight: boldest;
+   }
+
+   footer h2 {
+    padding-top: 6%;
+   }
+
    figure.footr-logo-container {
     text-align: center;
    }
 
    footer .email {
     color: white;
+    font-size: larger;
    }
 
    footer p {
     font-weight: bold;
     font-size: larger;
+   }
+
+   p.add-cal-other-apps a,
+   p.add-cal-google a {
+    color: antiquewhite;
    }
 
    /* *For hiding until the content is available */
@@ -198,6 +213,11 @@ textarea {
 
 
    /* !HOME PAGE */
+   #score-prev-game .click-below {
+    font-size: larger;
+    margin-bottom: 0;
+   }
+
    #score-prev-game .links-to-accnts {
     display: flex;
     justify-content: center;
