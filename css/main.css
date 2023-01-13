@@ -153,6 +153,10 @@ textarea {
       text-align: center;
     }
 
+    .nav-button {
+      font-size: 2rem;
+    }
+
     ul.nav-list li a {
       color: white;
     }
@@ -181,10 +185,11 @@ textarea {
    }
 
    footer p {
-    font-weight: bold;
+    font-weight: bolder;
     font-size: larger;
    }
 
+   p.add-calendar,
    p.add-cal-other-apps a,
    p.add-cal-google a {
     color: antiquewhite;
@@ -201,9 +206,6 @@ textarea {
    #score-prev-game p#vid,
    section.social-card,
    section#video-card,
-   /* coaches pg */
-   section.assistant-coach,
-   /* players pg */
    figure.highlight,
    p.links
    /* calendar pg */
@@ -247,6 +249,21 @@ textarea {
 
   
   /* !COACHES PAGE */
+  .head-coach,
+  .assistant-coach {
+    font-size: larger;    
+  }
+
+  .head-coach h3,
+  .assistant-coach h3 {
+    text-indent: 6%;
+  }
+
+  p.coach-name,
+  p.assistant-coach {
+    font-weight: bold;
+  }
+
   /* !PLAYERS PAGE */
   ul.player-directory-mobile, 
   ul.player-directory-non-mobile {
@@ -301,6 +318,10 @@ textarea {
     width: 100%;
   }
 
+  #g-cal h3 {
+    display: none;
+  }
+
   #g-cal div.calendar-agenda-view,
   #g-cal div.calendar-week-view,
   #g-cal div.calendar-month-view {
@@ -331,10 +352,20 @@ textarea {
      height: 100%;
    }
    
-   /* !For hiding for mobile view */
+   /* !Hiding calendars for mobile view */
    div.calendar-week-view,
    div.calendar-month-view {
     display: none;
+   }
+
+   .docs h3,
+   #docs-list {
+    text-align: center;
+   }
+
+   ul#docs-list li {
+    font-size: large;
+    padding-top: 3%;
    }
 
 
@@ -429,9 +460,52 @@ textarea {
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
+  /* !HEADER */
+    header {
+      font-size: large;
+    }
+  
+    nav li a {
+      font-size: larger;
+    }
+
+  .h1-and-figure-wrapper {
+    justify-content: space-around;
+  }
+
+  nav {
+    height: 60%;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  ul.nav-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    font-size: medium;
+  }
+
+  .tickets-2 {
+    display: none;
+  }
+
+  /* !FOOTER */
+  footer h2 {
+    padding-top: 3%;
+    font-size: xx-large;
+  }
+
+  /* !COACHES PG */
+  .coach-name {
+    text-align: left;
+    text-indent: 11%;
+  }
 
   /* !PLAYERS PG */
-   ul.player-directory-mobile {
+  ul.player-directory-mobile {
     display: none;
   }
 
@@ -449,10 +523,42 @@ textarea {
   div.calendar-month-view {
     display: flex;
   }
+
+  .docs h3,
+  #docs-list {
+   text-align: center;
+  }
+
+  .docs h3 {
+    font-size: x-large;
+  }
+
+  ul#docs-list li {
+   font-size: larger;
+   padding-top: 3%;
+  }
   
 }
 
 @media only screen and (min-width: 1200px) {
+  /* !HEADER */
+  header {
+    font-size: x-large;
+  }
+
+  nav li a {
+    font-size: x-large;
+  }
+
+  /* !FOOTER */
+  footer h2 {
+    padding-top: 2%;
+    font-size: xx-large;
+  }
+
+  footer p {
+    font-size: x-large;
+  }
 
   /*  !CALENDAR PG */
 /* *NEED TO WORK ON BELOW CODE FOR THIS @MEDIA AFTER COMMITTING & MERGE PREVIOUS CHANGES */
@@ -460,27 +566,40 @@ textarea {
     width: 100%;
   }
   
+  div.calendar-agenda-view,
   div.calendar-week-view {
    display: none;
   }
 
-  div.calendar-month-view,
+  div.calendar-month-view {
   /* div.calendar-week-view, */
-  div.calendar-agenda-view {
     display: flex;
     flex-flow: row nowrap;
-  }
-  
-  div.calendar-agenda-view {
-    width: 30%;
-    
+    justify-content: center;
   }
 
-  div.calendar-month-view {
-    width: 60%;
+  .docs h3,
+  #docs-list {
+    font-size: 1.5em;
+    padding-left: 6%;
+    text-align: left;
+  }
+
+  .docs h3 {
+    font-size: xx-large;
+  }
+
+  ul#docs-list {
+    padding-left: 8%;
+  }
+
+  ul#docs-list li {
+   /* font-size: 1.5em; */
+   padding-top: 3%;
   }
 
 }
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
