@@ -198,16 +198,12 @@ textarea {
    nav ul.nav-list li.donate,
    nav ul li.store,
    nav ul li.footage,
-   /* footer */
-   footer p.footr-instagram,
    /* home pg*/
    #score-prev-game p#vid,
    section.social-card,
    section#video-card,
    figure.highlight,
-   p.links
-   /* calendar pg */
-   /* ul.docs-list li for both contract & code of conduct*/ {
+   p.links {
     display: none;
    }
 
