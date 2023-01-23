@@ -145,6 +145,10 @@ textarea {
     h1 {
       text-decoration: underline;
     }
+    
+    h1 a {
+      color: black;
+    }
 
     nav {
       background-color: black;
