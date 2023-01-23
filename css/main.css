@@ -465,6 +465,14 @@ textarea {
     header {
       font-size: large;
     }
+
+    .header-logo-container img {
+      padding-top: 10%;
+    }
+
+    /* *.header-logo-container {
+      margin: 10% 0 0 0;
+    } */
   
     nav li a {
       font-size: larger;
@@ -473,6 +481,8 @@ textarea {
   .h1-and-figure-wrapper {
     justify-content: space-around;
   }
+
+
 
   nav {
     height: 60%;
