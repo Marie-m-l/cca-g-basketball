@@ -174,28 +174,47 @@ textarea {
    }
 
    footer h2 {
+    font-weight: 1000;
     padding-top: 6%;
+    text-decoration: underline;
    }
 
-   figure.footr-logo-container {
-    text-align: center;
+   .clickable-text-instagram-footr {
+    color: orangered;
+    text-decoration: none;
    }
 
-   footer .email {
-    color: white;
-    font-size: larger;
+   .instagram-icon-footr {
+    font-size: 3.5em;
    }
-
+   
+   /* footer h3, */
    footer p {
-    font-weight: bolder;
     font-size: larger;
-   }
-
-   p.add-calendar,
-   p.add-cal-other-apps a,
-   p.add-cal-google a {
-    color: antiquewhite;
-   }
+    font-weight: bolder;
+    }
+   
+   footer .email {
+     color: white;
+     font-size: larger;
+    }
+    
+    .footr-instagram {
+      color: orangered;
+      font-weight: 890;
+    }
+    
+    
+    p.add-calendar,
+    p.add-cal-other-apps a,
+    p.add-cal-google a {
+      color: antiquewhite;
+      text-decoration: none;
+    }
+    
+    figure.footr-logo-container {
+     text-align: center;
+    }
 
    /* *For hiding until the content is available */
    /* header */
@@ -505,9 +524,33 @@ textarea {
 
   /* !FOOTER */
   footer h2 {
-    padding-top: 3%;
     font-size: xx-large;
+    padding-top: 3%;
   }
+
+  footer .footer-content-wrapper{
+    display: flex;
+    justify-content: center;
+    margin: 0 3% 0 3%;
+  }
+
+  section.footr-contact-social,
+  section.follow-via-cal {
+    width: 50%;
+  }
+
+  section.footr-contact-social h3,
+  section.footr-contact-social .footr-instagram a,
+  section.follow-via-cal h3 {
+    font-size: largest;
+    color: black;
+    text-decoration: underline black;
+  }
+
+  .instagram-icon-footr {
+    color: white;
+  }
+  
 
   /* !COACHES PG */
   .coach-name {
