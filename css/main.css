@@ -90,9 +90,9 @@ textarea {
    /* !BASE GENERAL STYLES */
 
    html {
-     font-size: 16px;
-     height: 100%;
-     width: 100%;
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
    }
 
    body {
@@ -170,6 +170,7 @@ textarea {
     
    /* !FOOTER */
    footer {
+    justify-content: center;
     margin: 4% 0;
    }
 
@@ -179,16 +180,22 @@ textarea {
     text-decoration: underline;
    }
 
+   footer h3 {
+    justify-content: center;
+    text-align: center;
+   }
+
    .clickable-text-instagram-footr {
-    color: orangered;
+    color: black;
     text-decoration: none;
    }
 
    .instagram-icon-footr {
+    color: white;
     font-size: 3.5em;
    }
    
-   /* footer h3, */
+   footer h3,
    footer p {
     font-size: larger;
     font-weight: bolder;
@@ -199,8 +206,8 @@ textarea {
      font-size: larger;
     }
     
-    .footr-instagram {
-      color: orangered;
+    .footr-instagram a {
+      color: black;
       font-weight: 890;
     }
     
@@ -479,6 +486,7 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
+   /*!--- TABLET ---*/
 @media only screen and (min-width: 768px) {
   /* !HEADER */
     header {
@@ -546,12 +554,7 @@ textarea {
     color: black;
     text-decoration: underline black;
   }
-
-  .instagram-icon-footr {
-    color: white;
-  }
   
-
   /* !COACHES PG */
   .coach-name {
     text-align: left;
@@ -594,6 +597,7 @@ textarea {
   
 }
 
+/*!--- DESKTOP, ECT. ---*/
 @media only screen and (min-width: 1200px) {
   /* !HEADER */
   header {
@@ -606,12 +610,21 @@ textarea {
 
   /* !FOOTER */
   footer h2 {
-    padding-top: 2%;
     font-size: xx-large;
+    padding-top: 2%;
   }
 
   footer p {
     font-size: x-large;
+  }
+
+  section.footr-contact-social {
+    padding-right: 0;
+    justify-self: right;
+  }
+  
+  section.follow-via-cal {
+    padding-left: 5%;
   }
 
   /*  !CALENDAR PG */
