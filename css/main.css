@@ -604,6 +604,16 @@ textarea {
     font-size: x-large;
   }
 
+  .h1-and-figure-wrapper {
+    align-items: center;
+    justify-content: center;
+  }
+
+  figure.header-logo-container {
+    margin: 4% 2% 4% 5%;
+  }
+
+
   nav li a {
     font-size: x-large;
   }
