@@ -108,9 +108,15 @@ textarea {
    }
 
    h2 {
+    color: #000;
+    font-size: xx-large;
     text-align: center;
     text-decoration: underline;
     width: 100%;
+   }
+
+   h3 {
+    font-size:larger;
    }
 
    p {
@@ -197,8 +203,11 @@ textarea {
    
    footer h3,
    footer p {
-    font-size: larger;
     font-weight: bolder;
+    }
+
+    footer p {
+      font-size:x-large;
     }
    
    footer .email {
@@ -532,7 +541,6 @@ textarea {
 
   /* !FOOTER */
   footer h2 {
-    font-size: xx-large;
     padding-top: 3%;
   }
 
@@ -550,7 +558,6 @@ textarea {
   section.footr-contact-social h3,
   section.footr-contact-social .footr-instagram a,
   section.follow-via-cal h3 {
-    font-size: largest;
     color: black;
     text-decoration: underline black;
   }
@@ -620,8 +627,12 @@ textarea {
 
   /* !FOOTER */
   footer h2 {
-    font-size: xx-large;
+    font-size: xxx-large;
     padding-top: 2%;
+  }
+
+  footer h3 {
+    font-size: x-large;
   }
 
   footer p {
@@ -638,7 +649,6 @@ textarea {
   }
 
   /*  !CALENDAR PG */
-/* *NEED TO WORK ON BELOW CODE FOR THIS @MEDIA AFTER COMMITTING & MERGE PREVIOUS CHANGES */
   article#g-cal {
     width: 100%;
   }
